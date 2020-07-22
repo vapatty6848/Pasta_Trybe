@@ -57,14 +57,18 @@
   </head>
   <body>
     <script>
+      // 01
       let tag_H1 = document.createElement('h1') ;
       tag_H1.innerHTML = 'Exercício 5.2 - JavaScript';
       document.body.appendChild(tag_H1);
-
+      // 02
       let divMain = document.createElement('div');
       divMain.className = 'main-content';
       document.body.appendChild(divMain);
-
+      //03
+      let divCent = document.createElement('div');
+      divCent.className = 'center-content';
+      divMain.appendChild(divCent);
       
      
       // Adicione a tag div com a classe center-content como filho da tag div criada no passo 2;
