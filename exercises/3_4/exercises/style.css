@@ -1,13 +1,27 @@
 body {
-    margin: opx;
-    width: auto;
-    background-color: burlywood;
+    margin: 1opx;
+    max-width: 800px;
+    background-color: rgb(231, 210, 183);
 }
- .cabeçalho {
-    padding: 15px;
+.cabeçalho {
+    padding: 25px;
+    font-family: cursive;
+    font-weight: bold;
+    background-color: rgb(168, 151, 185);
     text-decoration-color: crimson;
 }
 
 a {
     padding: 5px;
+}
+.stop {
+    width: 600px;
+}
+
+p {
+    max-width: 600px;
+}
+.bibliogafia {
+    margin-left: 30px;
+
 }
