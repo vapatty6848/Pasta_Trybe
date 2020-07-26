@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // 01
+      let tag_H1 = document.createElement('h1') ;
+      tag_H1.innerHTML = 'Exercício 5.2 - JavaScript';
+      document.body.appendChild(tag_H1);
+      // 02
+      let divMain = document.createElement('div');
+      divMain.className = 'main-content';
+      document.body.appendChild(divMain);
+      //03
+      let divCent = document.createElement('div');
+      divCent.className = 'center-content';
+      divMain.appendChild(divCent);
+      //04
+      let  TagPDivCent = document.createElement('p');
+      TagPDivCent.innerHTML = 'Adicione a tag p como filho do div';
+      divCent.appendChild(TagPDivCent);
+      //05
+      let divLeftContent = document.createElement('div');
+      divLeftContent.className = 'left-content';
+      divMain.appendChild(divLeftContent);
+      //06 
+      let divRightContent = document.createElement('div');
+      divRightContent.className = 'right-content';
+      divMain.appendChild(divRightContent);
+      //07
+      let img = document.createElement('img');
+      img.src="http://lorempixel.com/400/200/";
+      img.className = 'small-image';
+      divLeftContent.appendChild(img);
+       // https://picsum.photos/200
+     
+      
+    </script>
+  </body>
+</html>
