@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6.1 - Cadastro de Curriculum</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+       <div id="div-header">
+           <h1>Cadastro de Curriculum</h1>
+           <p>Este é um formulário para cadastrar curriculum</p>
+       </div>
+       <form>
+          <fieldset>
+              <legend>Dados Pessoais</legend>
+              <label for="name">Nome: </label>
+              <input required="required" type="text" name="nome" id="name" placeholder="digite seu nome" max="40" size="65"><br> <br>
+              <label for="email">Email: </label>
+              <input required="required" type="text" name="email" onblur="validacaoEmail(f1.email)"  id="email" placeholder="Digite seu email" max="50" size="65">
+          </fieldset>
+          <fieldset>
+            <label for="cpf">CPF: </label>
+            <input required="required" type="text" name="cpf" id="cpf" max="11" size="65" ><br> <br>
+            <label for="endereco">Endereço: </label>
+            <input required="required" type="text" name="endereco"  id="endereco" size="100"><br><br>
+            <label for="cidade">Cidade: </label>
+            <input required="required" type="text" name="cidade"  id="cidade">
+            <label for="estado">Estado: </label>
+            <input required="required" type="text" name="estado"  id="estado">
+
+          </fieldset>
+
+       </form>
+
+
+</body>
+</html>
+ <fieldset> campo * </fieldset>
