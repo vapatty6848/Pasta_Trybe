@@ -1,0 +1,23 @@
+body {
+  font-size: 3em;
+  margin: 10px
+}
+h1 {
+  font-size: 0.1;
+
+}
+h2 {
+  margin-bottom: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    display: flex;
+}
+
+figcaption{
+  margin-bottom: 15px;
+}

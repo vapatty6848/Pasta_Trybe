@@ -1,0 +1,82 @@
+/* fieldset input {
+    size: auto;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: purple;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.main-title {
+    text-align: center;
+    background-color: rosybrown;
+    border: 2px solid saddlebrown;
+    border-radius: 12px;
+    width: 80%;
+    margin: 10px 0;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#enviar {
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+#limpar {
+    display: block;
+    font-size: 20px;
+    margin: auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+fieldset {
+    background-color: whitesmoke;
+    border: 2px solid grey;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:valid {
+    border: 2px solid black;
+}
+
+
+
+select:invalid {
+    border: 2px solid red;
+}
+
+select:valid {
+    border: 2px solid black;
+}
+
+textarea:invalid {
+    border: 2px solid red;
+}
+
+textarea:valid {
+    border: 2px solid black;
+}
+
+#dadosConsolidados {
+    border: 2px solid black;
+    margin-bottom: 50px;
+    height: 600px;
+    }
