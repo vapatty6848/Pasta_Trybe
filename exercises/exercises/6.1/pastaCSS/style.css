@@ -1,6 +1,4 @@
-/* fieldset input {
-    size: auto;
-} */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +6,18 @@
 }
 
 body {
-    color: purple;
+    width: 80%;
+    color: rgb(236, 221, 236);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 17px;
     line-height: 1.9;
+    margin: 20px;
 }
 
 .main-title {
     text-align: center;
-    background-color: rosybrown;
-    border: 2px solid saddlebrown;
+    background-color: rgb(226, 211, 211);
+    border: 2px solid rgb(17, 16, 16);
     border-radius: 12px;
     width: 80%;
     margin: 10px 0;
@@ -47,10 +47,17 @@ fieldset {
     border: 2px solid grey;
     text-align: left;
     margin-bottom: 30px;
+    padding: 15px;
+    line-height: 2em;
+}
+fieldset input{
+    padding: 5px;
+    text-align: center;
 }
 
 input:invalid {
-    border: 2px solid red;
+    border: 2px solid rgb(247, 206, 206);
+    border-radius: 5px;
 }
 
 input:valid {
@@ -60,7 +67,7 @@ input:valid {
 
 
 select:invalid {
-    border: 2px solid red;
+    border: 2px solid rgb(235, 191, 191);
 }
 
 select:valid {
@@ -68,7 +75,7 @@ select:valid {
 }
 
 textarea:invalid {
-    border: 2px solid red;
+    border: 2px solid rgb(241, 203, 203);
 }
 
 textarea:valid {
