@@ -23,11 +23,20 @@ const lesson3 = {
    lesson2.turno="manhã";
  }
 
- addTurno();
  console.log(Object.entries(lesson2));
 /* Crie uma função para listar as keys de um objeto. Essa função deve receber um objeto como parâmetro. */
 
 function listKeys (lesson) {
   console.log(Object.keys(lesson));
 }
-let lesson = listKeys(lesson2);
+
+/* Crie uma função para mostrar o tamanho de um objeto. */ 
+function lengthObj (lesson ) {
+  const lenObj = Object.keys(lesson).length;
+  return lenObj;
+}
+
+ addTurno();
+ let lesson = listKeys(lesson2);
+ let retsult = lengthObj(lesson3);
+ console.log(retsult);
