@@ -6,7 +6,7 @@ import { Map, TileLayer } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import '../styles/pages/orphanages-map.css';
 
-import local from '../images/local.svg';
+import images from '../images/ilustra02.svg';
 
 
 function OrphanagesMap() {
@@ -21,7 +21,7 @@ function OrphanagesMap() {
         </header>
 
         <footer>
-          <strong>Campinas</strong>
+          <strong>Sorocaba</strong>
           <span>São Paulo</span>
         </footer>
       </aside>
