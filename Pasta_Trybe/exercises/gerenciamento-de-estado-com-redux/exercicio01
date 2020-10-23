@@ -1,0 +1,6 @@
+// Definindo um action creator
+const action = {
+  type: 'LOGIN'
+}
+// Define an action creator here:
+const createState = () => action; 
