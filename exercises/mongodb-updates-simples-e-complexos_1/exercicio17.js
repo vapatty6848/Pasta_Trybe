@@ -3,6 +3,6 @@ db.xmen.updateMany(
     class: "gama" 
   },
   { 
-min: { power: 300 }
+$min: { power: 300 }
   }
 );
