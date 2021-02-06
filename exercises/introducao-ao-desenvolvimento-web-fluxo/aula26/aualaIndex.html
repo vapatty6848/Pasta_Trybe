@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    ul li {
+      list-style:circle;
+    }
+  </style>
+</head>
+<body>
+  <h1>Contatos - Lendo do backend</h1>
+  <ul id="lista"></ul>
+  <script>
+    window.onload = async () => {
+
+      const contatos = await fetch('http://localhost:3000/contatos')
+        .then(response => response.json());
+      setTimeout(async () =>{
+        const contatos = await fetch('http://localhost:3000/contatos')
+          .then(response => response.json());
+
+      contatos.forEach((contato) => {
+         var li = document.createElement("li");
+         li.innerHTML = contato.name;
+         document.querySelector('#lista').appendChild(li);
+      });
+        contatos.forEach((contato) => {
+          var li = document.createElement("li");
+          li.innerHTML = contato.name;
+          document.querySelector('#lista').appendChild(li);
+        });
+
+      console.log(contatos.size);
+      }, 5000);
+
+      // console.log(contatos.size);
+
+    }
+  </script>
+</body>
+</html>
