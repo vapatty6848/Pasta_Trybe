@@ -1,0 +1,16 @@
+{
+  "name": "io-local",
+  "version": "1.0.0",
+  "description": "promises e async",
+  "main": "node exercicio1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node exercicio2.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "vapatty6848"
+  },
+  "author": "vania patricia",
+  "license": "ISC"
+}
